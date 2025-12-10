@@ -124,13 +124,24 @@ Este relatório descreve o desenvolvimento, os testes e a documentação do Trab
 
 
 6. Teste de Carga
-   
-  O teste de carga (PENDENTE) será executado com a ferramenta Apache JMeter sobre os quatro endpoints da API. O teste será configurado para simular um mínimo de 50 requisições simultâneas.
-  
-  Arquivo do Teste: O script de teste de carga (.jmx ou similar) será adicionado ao repositório após a conclusão da API
-  
-  Relatório de Carga: [PREENCHER - Inserir o Screenshot ou PNG do relatório de carga aqui.]
 
+    O teste de carga foi executado via Apache JMeter sobre os quatro endpoints da API.
+    
+    6.1. Configuração planejada:
+    
+        50 usuários simultâneos (threads)
+        
+        Período de ramp-up configurado para simular requisições reais
+        
+        Cada thread executará requisições aos quatro endpoints
+    
+    6.2. Arquivos
+    
+        Script JMeter (.jmx): jmeter/Gráfico Agregado.jmx
+        
+        Relatório de Carga:
+        ![img.png](img.png)
+        ![img_1.png](img_1.png)
 
 7. Vídeo de Apresentação
    
@@ -139,8 +150,8 @@ Este relatório descreve o desenvolvimento, os testes e a documentação do Trab
 
 8. Uso de Inteligência Artificial
     
-  Ferramenta(s) de IA Utilizada(s): GEMINI
+  Ferramenta(s) de IA Utilizada(s): GEMINI e ChatGPT
   
-  Facilidades Encontradas: Facilitou criar o RADME do GitHub
+  Facilidades Encontradas: Facilitou criar o README do GitHub e deubugar erros.
   
-  Dificuldades Encontradas: [PREENCHER] (Ex: Foi necessário ajustar a sintaxe específica do framework ou corrigir erros na lógica de tratamento de exceções.)
+  Dificuldades Encontradas: Ao passar o link do GitHub para a IA analisar e elaborar o README, houveram dificuldades de compreensão do que estava acontecendo em cada etapa. Isso pois, apesar da IA explicar tudo com certeza e não questionar informações em nenhum momento, foi necessário elaborar o prompt múltiplas vezes, dizendo a mesma coisa de maneiras diferentes.
