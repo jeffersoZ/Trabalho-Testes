@@ -17,7 +17,7 @@ Grupo: Jefferson Ademir Zimmermann e Ana Clara
 3. Classe de Cálculo e Operações
   A lógica central do sistema reside na classe principal de cálculo, Main.CalculadoraFinanceira, que contém as quatro operações obrigatórias relacionadas a finanças pessoais.
 
-  3.1. Operação 1: Juros Simples
+3.1. Operação 1: Juros Simples
     Esta operação calcula os juros com base em capitalização linear.
     
     Entrada Esperada: capital (float), taxa (float), tempo (int).
@@ -29,20 +29,29 @@ Grupo: Jefferson Ademir Zimmermann e Ana Clara
 
   3.2. Operação 2: Juros Compostos
     Esta operação calcula o montante final em regime de capitalização composta.
+    
     Entrada Esperada: capital (float), taxa (float), tempo (int).
+  
     Cálculo: $$montante = capital \cdot (1 + taxa)^{tempo}$$
+  
     O resultado final é o valor total do Montante.
 
   3.3. Operação 3: Valor Futuro
     Esta operação determina o valor futuro de um investimento com base em uma taxa de juros e período de tempo.
+    
     Entrada Esperada: valorPresente (float), taxa (float), tempo (int).
+   
     Cálculo: $$VF = VP \cdot (1 + taxa)^{tempo}$$
+   
     O resultado final deve retornar o Valor Futuro.
 
   3.4. Operação 4: Valor Presente
     Esta operação calcula o valor presente (descontado) necessário para atingir um valor futuro.
+    
     Entrada Esperada: valorFuturo (float), taxa (float), tempo (int).
+   
     Cálculo: $$VP = VF / (1 + taxa)^{tempo}$$
+   
     O resultado final deve retornar o Valor Presente.
 
 
