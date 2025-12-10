@@ -11,14 +11,16 @@ Este relatório descreve o desenvolvimento, os testes e a documentação do Trab
 
   2.1. Tecnologias Utilizadas
     O sistema foi desenvolvido com o seguinte stack tecnológico, conforme o código implementado:
-    
-    Linguagem de Programação: Java
-    
-    Framework de API: PENDENTE
+
+    Linguagem principal para cálculos: Java
     
     Framework de Teste Unitário: JUnit 5
     
-    Ferramenta de Teste de Carga: (PENDENTE)
+    API REST: Node.js + Express
+    
+    Ferramenta de Teste de Carga: Apache JMeter
+    
+    Gerenciamento de Dependências Java: Maven
 
 3. Classe de Cálculo e Operações
    
@@ -63,19 +65,54 @@ Este relatório descreve o desenvolvimento, os testes e a documentação do Trab
 
 
 4. Implementação da API REST
-   
-  A implementação da API REST (PENDENTE) será realizada utilizando o Spring Boot e exporá cada operação de cálculo em um endpoint separado (ex: /api/financas/juros-simples), sem autenticação e com retorno em JSON.
-  
-  Endpoint Base: http://localhost:[PORTA]/api/financas/[operacao]
-  
-  Exemplo de Acesso (Juros Simples):
-  
-  GET http://localhost:[PORTA]/api/financas/juros-simples?capital=1000&taxa=0.1&tempo=2
-  
-  Tratamento de Erros: A lógica de validação de argumentos inválidos já está implementada na classe de cálculo e será refletida na API para retornar mensagens de erro em JSON, como exigido.
 
+    A API foi implementada usando Node.js e Express, expondo cada operação de cálculo em um endpoint dedicado.
 
-5. Testes Unitários (CONCLUÍDO)
+    4.1. Endpoint Base
+        http://localhost:3000/financeiro
+
+    4.2. Endpoints Disponíveis
+        Operação	    Método	Caminho
+        Juros Simples	GET	    /financeiro/juros-simples?a=...&b=...&c=...
+        Juros Compostos	GET	    /financeiro/juros-compostos?a=...&b=...&c=...
+        Valor Futuro	GET	    /financeiro/valor-futuro?a=...&b=...&c=...
+        Valor Presente	GET	    /financeiro/valor-presente?a=...&b=...&c=...
+    
+    4.3. Exemplo de Requisição
+        GET http://localhost:3000/financeiro/juros-simples?a=1000&b=0.1&c=2
+    
+    4.4. Tratamento de Erros
+        A API retorna mensagens de erro em JSON quando:
+    
+        parâmetros não são números,
+        
+        valores inválidos são enviados,
+        
+        exceções internas são lançadas.
+        
+        Exemplo:
+        
+        { "erro": "Parâmetros devem ser números reais." }
+
+    4.5. Testes de API
+        O projeto inclui testes automatizados usando Jest + Supertest para validar os endpoints de cálculo financeiro.
+        
+        Pra rodar os testes:
+            npm test
+        
+        
+        Os testes cobrem:
+        Juros Simples
+        
+        Verifica cálculo correto
+        
+        Verifica erro quando parâmetros não são números
+        
+        Juros Compostos
+        
+        Valida o montante final com aproximação numérica
+
+5. Testes Unitários 
    
   Os testes unitários foram completamente implementados na classe CalculadoraFinanceiraTest, utilizando o framework JUnit 5.
   
