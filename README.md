@@ -19,8 +19,11 @@ Grupo: Jefferson Ademir Zimmermann e Ana Clara
 
   3.1. Operação 1: Juros Simples
     Esta operação calcula os juros com base em capitalização linear.
+    
     Entrada Esperada: capital (float), taxa (float), tempo (int).
+    
     Cálculo: $$juros = capital \cdot taxa \cdot tempo$$
+    
     O resultado final é o valor total dos juros (a API, quando implementada, deve retornar o valor total dos juros e o Montante).
 
 
