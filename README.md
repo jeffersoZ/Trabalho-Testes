@@ -100,7 +100,10 @@ Este relatório descreve o desenvolvimento, os testes e a documentação do Trab
   Link do Vídeo no YouTube: [PREENCHER - Link do YouTube]
 
 
-10. Uso de Inteligência Artificial
+8. Uso de Inteligência Artificial
+    
   Ferramenta(s) de IA Utilizada(s): GEMINI
+  
   Facilidades Encontradas: Facilitou criar o RADME do GitHub
+  
   Dificuldades Encontradas: [PREENCHER] (Ex: Foi necessário ajustar a sintaxe específica do framework ou corrigir erros na lógica de tratamento de exceções.)
