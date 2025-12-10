@@ -140,8 +140,8 @@ Este relatório descreve o desenvolvimento, os testes e a documentação do Trab
         Script JMeter (.jmx): jmeter/Gráfico Agregado.jmx
         
         Relatório de Carga:
-        ![relatorio_agragado](img.png)
-        ![grafico_resultados](img_1.png)
+![relatorio_agragado](img.png)
+![grafico_resultados](img_1.png)
 
 7. Vídeo de Apresentação
    
