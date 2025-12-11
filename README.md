@@ -1,5 +1,5 @@
 Relatório Final: Qualidade e Teste de Software
-Grupo: Jefferson Ademir Zimmermann e Ana Clara
+Grupo: Jefferson Ademir Zimmermann e Ana Clara Maiberg
 
 1. Introdução e Objetivo
 
@@ -145,7 +145,7 @@ Este relatório descreve o desenvolvimento, os testes e a documentação do Trab
 
 7. Vídeo de Apresentação
    
-  Link do Vídeo no YouTube: [PREENCHER - Link do YouTube]
+  Link do Vídeo no YouTube: https://youtu.be/jR2oXVsQkjk?si=mvXARMiA5wgkjDV7
 
 
 8. Uso de Inteligência Artificial
